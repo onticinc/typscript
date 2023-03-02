@@ -26,3 +26,7 @@ Added by TypesScript: Automaticall enumerated global constant identifiers.
 Lets anything go. Should be avoided because it takes away the advantages of TS. 
 
 ### Union Types
+
+`function combine (input:number | string, input2: string)
+    const result = input1 + input2
+`
