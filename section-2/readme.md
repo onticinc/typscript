@@ -27,8 +27,7 @@ Lets anything go. Should be avoided because it takes away the advantages of TS.
 
 ### Union Types
 
-`
-// combine is a function that takes two numbers and returns a number
+```
 function combine(input1: number | string , input2: number | string ){
     let result;
     if (typeof input1 === 'number' && typeof input2 === 'number'){
@@ -47,4 +46,4 @@ const combinedNames = combine('Anna', 'Max');
 console.log(combinedNames);
 
 
-`
+```
