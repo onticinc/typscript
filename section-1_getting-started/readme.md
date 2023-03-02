@@ -3,6 +3,7 @@
 ---
 
 ## What is TypeScript
+
 1. A JavaScript Superset
 2. A language building up on Javascript
 3. Takes regular Javascript and add's new Features and Advantages to it. 
@@ -29,9 +30,9 @@ console.log(add('2', '3')) // two strings
 
 ---
 
-## Use index.html and using-ts.ts files for example of how this would be a problem with an input form. 
+## Use index.html and using-ts.ts  files for final example of how fixes this problem with an input form. 
 
-Starting code example is a .js file.
+Starting code example in the js-only.js file:
 
 ```
 const button = document.querySelector('button);
@@ -47,5 +48,8 @@ button.addEventListener("click", function(){
 });
 
 ```
+
+
+With this example you could enter any value and it would accept it. It could add two numbers togethor or concatinate two strings togethor. 
 
 
