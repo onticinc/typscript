@@ -1,29 +1,76 @@
-# Typscript Types
+# **boldtext** Typscript Types
+
+---
 
 ### number
+
 All Numbers, no differentiation between integers or floats
 
 ### string
+
 All Text Values
 
 ### boolean
+
 True False
 Just the two, no "truthy" or "falsy" values
 
-### Object
-{age:30} 
-Any Javascript object, more specific types (type of object) are possible. 
+This code block shows how you can assign values to a number using enums.
 
-### Array 
+```
+
+// How Typscript assigns vales for numbers or strings.
+
+function add(n1: number, n2: number, showResult: boolean, phrase: string){
+
+    if (showResult){
+        console.log(phrase + n1 + n2)
+    } else {
+    return n1 + n2;
+}}
+
+const number1 = 1;
+const number2 = 2.8;
+const printResult = true;
+const resultPhrase = 'Result is:'
+
+
+add(number1, number2, printResult, resultPhrase);
+
+```
+
+
+How javascript would handle the same thing
+
+```
+
+
+function add(n1 + n2){
+    if (typeof n1 === 'number' || typeof n2 === 'number'){
+        throw new Error('Incorrect input!');`
+    }
+}
+
+
+```
+
+### Object
+
+{age:30}
+Any Javascript object, more specific types (type of object) are possible.
+
+### Array
+
 [1,2.3,]
 Any JavaScript array, type can be flexible or strict(regarding the element types)
 
 ### ENUM
+
 enum (NEW, OLD)
 Added by TypesScript: Automaticall enumerated global constant identifiers.
 
 ```
-enum Role {ADMIN, READ_ONLY, AUTHOR}; // Enum = Assigns labels to number values. 
+enum Role {ADMIN, READ_ONLY, AUTHOR}; // Enum = Assigns labels to number values.
 
 // Object Types & Key "Type" Pairs (Key Value Pairs)
 const person = {
@@ -46,8 +93,9 @@ for (const hobby of person.hobbies) {
 }
 ```
 
-### Any Type *
-Lets anything go. Should be avoided because it takes away the advantages of TS. 
+### Any Type \*
+
+Lets anything go. Should be avoided because it takes away the advantages of TS.
 
 ### Union Types
 
