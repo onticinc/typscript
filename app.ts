@@ -1,46 +1,17 @@
-// ### Object Types & Key "Type" Pairs (Key Value Pairs)
-// ### Using a tuple to define the role property of the person object.
-// 
-// const person: {
-//     name: string;
-//     age: number;
-//     nickname?: string; // ? makes the property optional
-//     hobbies: string[]; // Array
-//     role: [number, string]; // Tuple
-
-// } = {
-//     name: "Maximilian",
-//     age: 30,
-//     nickname: "Max",
-//     hobbies: ["Sports", "Cooking"],
-//     role: [2, "author"]
-// };
-
-enum Role {ADMIN, READ_ONLY, AUTHOR}; // Enum = Assigns labels to number values. 
-
-// Object Types & Key "Type" Pairs (Key Value Pairs)
-const person: {
-    name: string;
-    age: number;
-    nickname?: string; // ? makes the property optional
-    hobbies: string[]; // Array
-    role:  // Enum
-
-} = {
-    name: "Maximilian",
-    age: 30,
-    nickname: "Max",
-    hobbies: ["Sports", "Cooking"],
-    role: Role.ADMIN
-};
-
-let favoriteActivities: string[];
-
-console.log(person.nickname);
-
-for (const hobby of person.hobbies) {
-    console.log(hobby.toUpperCase());
-    // console.log(hobby.map()) // !!! ERROR !!!
-
-
+// combine is a function that takes two numbers and returns a number
+function combine(input1: number | string , input2: number | string ){
+    let result;
+    if (typeof input1 === 'number' && typeof input2 === 'number'){
+        result = input1 + input2;
+    } else {
+        result = input1.toString() + input2.toString();
+    }
+    return result;
 }
+
+
+const combinedAges = combine(30, 26);
+console.log(combinedAges);
+
+const combinedNames = combine('Anna', 'Max');
+console.log(combinedNames);

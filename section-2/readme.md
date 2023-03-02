@@ -1,27 +1,28 @@
-Typscript Types
+# Typscript Types
 
-# number
+### number
 All Numbers, no differentiation between integers or floats
 
-# string
+### string
 All Text Values
 
-# boolean
+### boolean
 True False
 Just the two, no "truthy" or "falsy" values
 
-# Object
+### Object
 {age:30} 
 Any Javascript object, more specific types (type of object) are possible. 
 
-# Array 
+### Array 
 [1,2.3,]
 Any JavaScript array, type can be flexible or strict(regarding the element types)
 
-# ENUM
+### ENUM
 enum (NEW, OLD)
 Added by TypesScript: Automaticall enumerated global constant identifiers.
 
-# Any Type *
+### Any Type *
 Lets anything go. Should be avoided because it takes away the advantages of TS. 
 
+### Union Types
