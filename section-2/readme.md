@@ -22,6 +22,30 @@ Any JavaScript array, type can be flexible or strict(regarding the element types
 enum (NEW, OLD)
 Added by TypesScript: Automaticall enumerated global constant identifiers.
 
+```
+enum Role {ADMIN, READ_ONLY, AUTHOR}; // Enum = Assigns labels to number values. 
+
+// Object Types & Key "Type" Pairs (Key Value Pairs)
+const person = {
+    name: "Maximilian",
+    age: 30,
+    nickname: "Max",
+    hobbies: ["Sports", "Cooking"],
+    role: Role.ADMIN
+};
+
+let favoriteActivities: string[];
+
+console.log(person.nickname);
+
+for (const hobby of person.hobbies) {
+    console.log(hobby.toUpperCase());
+    // console.log(hobby.map()) // !!! ERROR !!!
+
+
+}
+```
+
 ### Any Type *
 Lets anything go. Should be avoided because it takes away the advantages of TS. 
 
