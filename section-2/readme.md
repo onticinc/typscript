@@ -16,7 +16,7 @@ All Text Values
 
 ### boolean
 
-***boldtext*** True or False
+***boldtext*** True or False ***boldtext*** 
 Just the two, no "truthy" or "falsy" values
 
 
