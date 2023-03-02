@@ -16,13 +16,12 @@ All Text Values
 
 ### boolean
 
-*** True or False *** 
+___True or False__
+
 Just the two, no "truthy" or "falsy" values
 
-
+Example of how Typscript assigns vales for numbers or strings.
 ```
-
-How Typscript assigns vales for numbers or strings.
 
 function add(n1: number, n2: number, showResult: boolean, phrase: string){
 
@@ -65,12 +64,13 @@ Any Javascript object, more specific types (type of object) are possible.
 ### Array
 
 [1,2.3,]
-Any JavaScript array, type can be flexible or strict(regarding the element types)
+Any JavaScript array, type can be flexible or strict.
 
 ### Tuples
 
+Added by typscript... fixed length array. 
 
-Using a tuple to define the role property of the person object. 
+Code snippet exampl of using a tuple to define the role property of the person object. 
 
 ```
     const person: {
@@ -89,15 +89,17 @@ Using a tuple to define the role property of the person object.
 };
 ```
 
-### ENUM
+### ENUM Type
 
 enum (NEW, OLD)
-Added by TypesScript: Automaticall enumerated global constant identifiers.
+Added by TypesScript: Automatically enumerated global constant identifiers.
+
+Enum = Assigns labels to number values, number starts at 0, 1, 2, 3.
+
 
 ```
-enum Role {ADMIN, READ_ONLY, AUTHOR}; // Enum = Assigns labels to number values.
+enum Role {ADMIN, READ_ONLY, AUTHOR}; 
 
-// Object Types & Key "Type" Pairs (Key Value Pairs)
 const person = {
     name: "Maximilian",
     age: 30,
@@ -113,10 +115,16 @@ console.log(person.nickname);
 for (const hobby of person.hobbies) {
     console.log(hobby.toUpperCase());
     // console.log(hobby.map()) // !!! ERROR !!!
-
-
 }
 ```
+
+You can also assign values (numbers or strings) to a enum. 
+
+Example:
+```
+enum Role {ADMIN = 'admin', READ_ONLY = 100, AUTHOR = 200}; 
+```
+
 
 ### Any Type \*
 
