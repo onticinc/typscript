@@ -13,7 +13,9 @@ https://www.udemy.com/course/understanding-typescript/
 Individual readme notes and files can be found in section folders. 
 
 
-This is my personal notes | sandbox repo. It might not make sense to you, please feel free to correct or clarify any of my notes with a pull resuest. 
+---
+
+*Keep in mind, this is my personal notes | sandbox repo. It might not make sense to you, please feel free to correct or clarify any of my notes with a pull resuest.* 
 
 
 
