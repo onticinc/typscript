@@ -1,6 +1,9 @@
-// combine is a function that takes two numbers and returns a number
+// combine allows you to combine values of different types. Num
+// 
 function combine(input1: number | string , input2: number | string ){
     let result;
+    
+    // runtime type checking
     if (typeof input1 === 'number' && typeof input2 === 'number'){
         result = input1 + input2;
     } else {

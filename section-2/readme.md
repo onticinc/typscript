@@ -1,34 +1,38 @@
 # Typscript Basics and Basic Types
-
 ---
 
-### Number Type
+## Number Type
 
 All Numbers, no differentiation between integers or floats
 
-```
+
+## String
+
+1. All Text Values
 
 ```
 
-### string
 
-All Text Values
+```
 
-### boolean
+## boolean
 
-___True or False__
-
-Just the two, no "truthy" or "falsy" values
+1. True or False
+2. No "truthy" or "falsy" values
 
 Example of how Typscript assigns vales for numbers or strings.
+
 ```
+
+
 
 function add(n1: number, n2: number, showResult: boolean, phrase: string){
 
+    const result = n1 + n2;
     if (showResult){
-        console.log(phrase + n1 + n2)
+        console.log(phrase + result)
     } else {
-    return n1 + n2;
+    return result;
 }}
 
 const number1 = 1;
@@ -56,17 +60,17 @@ function add(n1 + n2){
 
 ```
 
-### Object
+## Object
 
 {age:30}
 Any Javascript object, more specific types (type of object) are possible.
 
-### Array
+## Array
 
 [1,2.3,]
 Any JavaScript array, type can be flexible or strict.
 
-### Tuples
+## Tuples
 
 Added by typscript... fixed length array. 
 
@@ -89,9 +93,8 @@ Code snippet exampl of using a tuple to define the role property of the person o
 };
 ```
 
-### ENUM Type
+## ENUM Type
 
-enum (NEW, OLD)
 Added by TypesScript: Automatically enumerated global constant identifiers.
 
 Enum = Assigns labels to number values, number starts at 0, 1, 2, 3.
@@ -121,20 +124,32 @@ for (const hobby of person.hobbies) {
 You can also assign values (numbers or strings) to a enum. 
 
 Example:
+
 ```
 enum Role {ADMIN = 'admin', READ_ONLY = 100, AUTHOR = 200}; 
+
 ```
 
 
-### Any Type \*
+## Any Type
 
 Lets anything go. Should be avoided because it takes away the advantages of TS.
 
-### Union Types
+```
+any[]
+
+```
+
+## Union Types
+
+1. combine() allows you to combine values of different types.
+2. Runtime type checking allows you to validate input types 
 
 ```
 function combine(input1: number | string , input2: number | string ){
     let result;
+    
+    // runtime type checking
     if (typeof input1 === 'number' && typeof input2 === 'number'){
         result = input1 + input2;
     } else {
@@ -149,6 +164,5 @@ console.log(combinedAges);
 
 const combinedNames = combine('Anna', 'Max');
 console.log(combinedNames);
-
 
 ```
