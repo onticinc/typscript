@@ -27,6 +27,24 @@ Lets anything go. Should be avoided because it takes away the advantages of TS.
 
 ### Union Types
 
-`function combine (input:number | string, input2: string)
-    const result = input1 + input2
+`
+// combine is a function that takes two numbers and returns a number
+function combine(input1: number | string , input2: number | string ){
+    let result;
+    if (typeof input1 === 'number' && typeof input2 === 'number'){
+        result = input1 + input2;
+    } else {
+        result = input1.toString() + input2.toString();
+    }
+    return result;
+}
+
+
+const combinedAges = combine(30, 26);
+console.log(combinedAges);
+
+const combinedNames = combine('Anna', 'Max');
+console.log(combinedNames);
+
+
 `
