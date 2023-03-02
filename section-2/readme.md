@@ -1,10 +1,14 @@
-# **boldtext** Typscript Types
+# Typscript Basics and Basic Types
 
 ---
 
-### number
+### Number Type
 
 All Numbers, no differentiation between integers or floats
+
+```
+
+```
 
 ### string
 
@@ -12,14 +16,13 @@ All Text Values
 
 ### boolean
 
-True False
+***boldtext*** True or False
 Just the two, no "truthy" or "falsy" values
 
-This code block shows how you can assign values to a number using enums.
 
 ```
 
-// How Typscript assigns vales for numbers or strings.
+How Typscript assigns vales for numbers or strings.
 
 function add(n1: number, n2: number, showResult: boolean, phrase: string){
 
@@ -63,6 +66,28 @@ Any Javascript object, more specific types (type of object) are possible.
 
 [1,2.3,]
 Any JavaScript array, type can be flexible or strict(regarding the element types)
+
+### Tuples
+
+
+Using a tuple to define the role property of the person object. 
+
+```
+    const person: {
+        name: string;
+        age: number;
+        nickname?: string; // ? makes the property optional
+        hobbies: string[]; // Array
+        role: [number, string]; // Tuple
+
+    } = {
+        name: "Maximilian",
+        age: 30,
+        nickname: "Max",
+        hobbies: ["Sports", "Cooking"],
+        role: [2, "author"]
+};
+```
 
 ### ENUM
 
