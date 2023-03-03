@@ -4,7 +4,7 @@ From Udemy course by Maximilian Schwarzmüller
 
 ---
 
-I strongly recommend you work through this course. So many good nuggets to learn... 
+I strongly recommend you work through this course. So many good nuggets to learn! 
 
 Link to course:
 https://www.udemy.com/course/understanding-typescript/
