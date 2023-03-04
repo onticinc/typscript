@@ -47,7 +47,14 @@ sudo npm install -g typescript
 5. It is a powerful compiler used to compile TS to JS. Typescript is much more picky than JS... it requires you to build better code. 
 6. Features are compiled to JS workarounds, possible errors are thrown. Allowing you to plan for specific scenerios. 
 7. Identifies runtime errors and lets you fix them before it becomes a problem. 
-8. Get mext-gen Javascript features (compiled down for older Browsers)
+8. Get next-gen Javascript features (compiled down for older Browsers)
+9. Non JavaScript features like interfaces and Generics
+10. Rich configuration options
+11. Meta-Programming features like Decorators
+12. Modern Tooling that helps even in non TypeScript Projects
+
+
+
 
 ---
 
