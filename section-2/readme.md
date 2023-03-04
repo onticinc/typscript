@@ -1,5 +1,14 @@
 # Typscript Basics and Basic Types
+
 ---
+
+# Core Types
+
+1. Number
+2. String 
+3. Boolean
+4. 
+
 
 ## Number Type
 
@@ -8,7 +17,7 @@ All Numbers, no differentiation between integers or floats
 
 ## String
 
-1. All Text Values
+1. All Text Values - 'Hi', "Hi", `Hi`
 
 ```
 
@@ -20,7 +29,7 @@ All Numbers, no differentiation between integers or floats
 1. True or False
 2. No "truthy" or "falsy" values
 
-Example of how Typscript assigns vales for numbers or strings.
+Example of how Typscript assigns values for numbers or strings.
 
 ```
 
