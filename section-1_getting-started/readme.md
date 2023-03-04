@@ -1,20 +1,61 @@
+<br />
+<br />
+
 # Getting Started 
+
+<br />
+
+*Use work-files/index.html and using-ts.ts files for final example.*
+
+<br />
 
 ---
 
+<br />
+
+## Command line installs
+
+<br >
+
+
+### Install typescript:
+
+
+```
+sudo npm install -g typescript
+```
+<br />
+
+### Run compiler:
+```
+ tsc fileName.ts
+```
+
+
+---
+
+<br />
+
 ## What is TypeScript
+
+<br />
 
 1. A JavaScript Superset
 2. A language building up on Javascript
 3. Takes regular Javascript and add's new Features and Advantages to it. 
 4. TS cant be use in the browser, it has to be converted to JS. Browser CAN'T execute it. 
-5. It is a powerful compiler used to compile TS to JS. Typescript is pickier thank JS so it requires you to build better code. 
+5. It is a powerful compiler used to compile TS to JS. Typescript is much more picky than JS... it requires you to build better code. 
 6. Features are compiled to JS workarounds, possible errors are thrown. Allowing you to plan for specific scenerios. 
 7. Identifies runtime errors and lets you fix them before it becomes a problem. 
+8. Get mext-gen Javascript features (compiled down for older Browsers)
 
 ---
 
+<br />
+
 ## Example 1: Accidently concatinating two strings instead of adding the two numbers togethor. 
+
+<br />
 
 ```
 function add(num1, num2){
@@ -22,17 +63,24 @@ function add(num1, num2){
 }
 
 console.log(add('2', '3')) // two strings
-// result = 23 because it combines the two strings, not adding the number.
 
 ```
 
-## Typscript fixes the problem of concatinating the two strings and checks that numbers are being used.
+<br />
+
+#### console log result = 23 because it combines the two strings, not adding the number.
+
+#### Typscript fixes the problem of concatinating the two strings and checks that only numbers are being used.
+
+<br />
 
 ---
 
-## Use index.html and using-ts.ts  files for final example of how fixes this problem with an input form. 
+<br />
 
-Starting code example in the js-only.js file:
+## Starting code example in the js-only.js file:
+
+<br />
 
 ```
 const button = document.querySelector('button);
@@ -49,11 +97,14 @@ button.addEventListener("click", function(){
 
 ```
 
+<br />
 
-With this example you could enter any value and it would accept it. It could add two numbers togethor or concatinate two strings togethor. 
+### With this example you could enter any value and it would accept it. It could add two numbers togethor or concatinate two strings togethor. 
 
 
-Example using typescript.
+## Same Example using typescript.
+
+<br />
 
 ```
 const button = document.querySelector("button");
@@ -68,3 +119,16 @@ const button = document.querySelector("button");
         console.log(add(+input1.value, +input2.value));
     });
 
+
+```
+
+<br />
+
+1. The ! - Tells TS that the input will never be null.
+2. as HTMLInputElement - Tells TS what type of input to be expecting. 
+3. num1 : number - Tells TS that the variable can only be a number. 
+
+
+
+
+<br />
