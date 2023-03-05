@@ -7,12 +7,13 @@
 1. Number
 2. String 
 3. Boolean
-4. 
+4. Object Types
 
 
 ## Number Type
 
 All Numbers, no differentiation between integers or floats
+
 
 
 ## String
@@ -71,10 +72,44 @@ function add(n1 + n2){
 
 ## Object
 
-{age:30}
+
+### The first {} assigns the types the second {} assigns the values. 
+
+```
+const person: theObject = {
+    name: string;
+    age: number
+} = {
+    name: 'Maximilian'
+    age: 30
+};
+
+```
+
+
 Any Javascript object, more specific types (type of object) are possible.
 
 ## Array
+
+```
+const person: theObject = {
+    name: string;
+    age: number
+} = {
+    name: 'Maximilian'
+    age: 30
+    hobbies: ['Sports', 'Cooking']
+};
+
+let favoriteActivities: string[];
+favoriteActivities = ['Sports']
+
+for (const hobby of person.hobbies) {
+    console.log(hobby.toUpperCase());
+}
+
+```
+
 
 [1,2.3,]
 Any JavaScript array, type can be flexible or strict.
