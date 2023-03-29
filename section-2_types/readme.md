@@ -116,7 +116,7 @@ Any JavaScript array, type can be flexible or strict.
 
 ## Tuples
 
-Added by typscript... fixed length array. 
+Javascript does not have Tuples, typscript added them as a feature... fixed length abd fixed type array. 
 
 Code snippet exampl of using a tuple to define the role property of the person object. 
 
@@ -210,3 +210,5 @@ const combinedNames = combine('Anna', 'Max');
 console.log(combinedNames);
 
 ```
+
+
